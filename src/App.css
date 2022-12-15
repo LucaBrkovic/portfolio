@@ -379,6 +379,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
+@media (max-width: 1600px) {
+  .banner img {
+    width: 69%;
+  }
+}
 @media (max-width: 1050px) {
   .banner {
     margin-top: 0;
@@ -388,6 +393,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     
 }
 
+}
+@media (max-width: 1199px) {
+
+.title-container {
+  height: 6rem;
+  margin-bottom: 5rem;
+}
 }
 @media (max-width: 985px) {
   .banner button {
@@ -401,6 +413,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   gap: 1rem;
 }
+.title-container {
+  height: 6rem;
+  margin-bottom: 2rem;
+}
+.banner h1 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+
 }
 @media (max-width: 760px) {
   .container {
