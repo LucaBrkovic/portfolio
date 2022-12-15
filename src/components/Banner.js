@@ -45,7 +45,7 @@ export const Banner = () => {
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Welcome to my Portfolio</span>
                         <div className="title-container">
-                        <h1>{`Hi my name is Luka Brkovic `}<br/> <span className="wrap wrap-color">  {text}</span></h1>
+                        <h1>{`Hi my name is Luka `}<br/> <span className="wrap wrap-color">  {text}</span></h1>
                         </div>
                         <p>Frontend developer in progress,based in Germany, code addicted...</p>
                         <div className="btn-container">
