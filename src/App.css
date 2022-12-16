@@ -434,8 +434,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
   .navbar-container {
     width: 100vw;
-    background-color: #121212;
-    padding: 10px;
+    box-shadow: 2px 2px 2px 2px #151515;
+    background-color: #151515;
+    padding: 30px;
+    border-radius: 35px;
   }
   .btn-container {
     display: flex;
