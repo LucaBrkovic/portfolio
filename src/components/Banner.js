@@ -49,8 +49,8 @@ export const Banner = () => {
                         </div>
                         <p>Frontend developer in progress, based in Germany, code addicted...</p>
                         <div className="btn-container">
-                           <button onClick={""}>Contact me</button>
                            <a href="https://github.com/LucaBrkovic"><button>Github <Github/></button></a>
+                            <button onClick={""}>Contact me</button>
                         </div>
                        
                     </Col>

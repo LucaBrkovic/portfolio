@@ -2,19 +2,29 @@ import { Col, Container, Row, Tab } from "react-bootstrap"
 import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png"
 import Nav from 'react-bootstrap/Nav';
-import projImg1 from "../assets/img/project-img1.png"
-import projImg2 from "../assets/img/project-img2.png"
+import gradiant from "../assets/img/gradiant.png"
 export const Project = () => {
     const projects = [
         {
-        title: "Project Inc",
-        description: "Design",
-        imgUrl : projImg1, 
+        title: "Template",
+        description: "Template",
+        imgUrl : gradiant, 
+        linkSite: "",
+        linkGit: ""
         },
         {
-            title: "Project Inc2",
-            description: "Design2",
-            imgUrl : projImg2, 
+            title: "Template",
+            description: "Template",
+            imgUrl : gradiant, 
+            linkSite: "",
+            linkGit: ""
+        },
+        {
+            title: "Template",
+            description: "Template",
+            imgUrl : gradiant, 
+            linkSite: "",
+            linkGit: ""
         }
     ]
     return (
@@ -23,7 +33,7 @@ export const Project = () => {
             <Row>
                 <Col>
             <h2>Projects</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque pariatur totam id facilis, iure voluptatibus.</p>
+            <p>All my Project, at one place. </p>
             <Tab.Container id="project-tabs" defaultActiveKey="first">
             <Nav variant="pills" defaultActiveKey="/home">
          <Nav.Item>
@@ -52,10 +62,10 @@ export const Project = () => {
                 </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
-                    mimi
+                    
                 </Tab.Pane>
                 <Tab.Pane eventKey="third">
-                    mimi2
+                    
                 </Tab.Pane>
             </Tab.Content>
             </Tab.Container>

@@ -2,9 +2,10 @@ import React from 'react'
 import { Col, Row, Container  } from 'react-bootstrap';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import meter1 from "../assets/img/meter1.svg"
-import meter2 from "../assets/img/meter2.svg"
-import meter3 from "../assets/img/meter3.svg"
+import skill1 from "../assets/img/skill1.svg"
+import skill2 from "../assets/img/skill2.svg"
+import skill3 from "../assets/img/skill3.svg"
+import skill4 from "../assets/img/skill4.svg"
 import colorSharp from "../assets/img/color-sharp.png"
 export const  Skill = () => {
     const responsive = {
@@ -22,7 +23,7 @@ export const  Skill = () => {
           items: 2
         },
         mobile: {
-          breakpoint: { max: 464, min: 0 },
+          breakpoint: { max: 766, min: 0 },
           items: 1
         }
       };
@@ -35,23 +36,23 @@ export const  Skill = () => {
                 <h2>
                     Skills 
                 </h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque pariatur totam id facilis, iure voluptatibus.</p>
+                <p>I can't guarantee you with experience, but I promise you that the effort is guaranteed.</p>
                 <Carousel responsive={responsive} infinite={true} className="skill-slider">
                 <div className='item'>
-                    <img src={meter1} alt="Image" />
-                    <h5>Web Development</h5>
+                    <img src={skill1} alt="Image" />
+                    <h5>Java Script</h5>
                 </div>
                 <div className='item'>
-                    <img src={meter2} alt="Image" />
-                    <h5>Web Development</h5>
+                    <img src={skill2} alt="Image" />
+                    <h5>React</h5>
                 </div>
                 <div className='item'>
-                    <img src={meter3} alt="Image" />
-                    <h5>Web Development</h5>
+                    <img src={skill3} alt="Image" />
+                    <h5>Responsive Design</h5>
                 </div>
                 <div className='item'>
-                    <img src={meter1} alt="Image" />
-                    <h5>Web Development</h5>
+                    <img src={skill4} alt="Image" />
+                    <h5>Adobe Illustrator</h5>
                 </div>
                 </Carousel>
             </div>
