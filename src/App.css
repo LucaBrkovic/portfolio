@@ -740,7 +740,10 @@ font-weight: 700;
 
   @media (max-width: 575px) {
     .proj-imgbx {
-  width: 70%;
-  margin: 40px auto;
+  width: 90%;
+  margin: 20px auto;
+    }
+    .project .nav.nav-pills .nav-link {
+    font-size: 10px;
     }
   }
