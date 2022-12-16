@@ -47,7 +47,7 @@ export const Banner = () => {
                         <div className="title-container">
                         <h1>{`Hi my name is Luka `}<br/> <span className="wrap wrap-color">  {text}</span></h1>
                         </div>
-                        <p>Frontend developer in progress,based in Germany, code addicted...</p>
+                        <p>Frontend developer in progress, based in Germany, code addicted...</p>
                         <div className="btn-container">
                            <button onClick={""}>Contact me</button>
                            <a href="https://github.com/LucaBrkovic"><button>Github <Github/></button></a>
