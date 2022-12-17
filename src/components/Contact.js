@@ -47,7 +47,7 @@ export const Contact = () => {
                         <textarea name="message"  placeholder='Message' />
                         <TrackVisibility>
              {({isVisible}) =>
-             <div className={isVisible ? "animate__animated animate__fadeInDown" : ""}>
+             <div className={isVisible ? "animate__animated animate__fadeInUp" : ""}>
                             <div className='contact-btn__container'>
                             <button type='submit'>Send Message</button>    
                             </div>
