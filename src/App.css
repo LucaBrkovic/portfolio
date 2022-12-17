@@ -926,6 +926,7 @@ width: 90%;
   display: none;
 }
 .footer-container {
+  padding-top: 1rem;
   justify-content: center;
   margin-bottom: 0.5rem;
 }
