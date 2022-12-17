@@ -36,7 +36,7 @@ export const Project = () => {
                 <Col>
             <TrackVisibility>
              {({isVisible}) =>
-             <div className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+             <div className={isVisible ? "animate__animated animate__fadeInDown" : ""}>
             <h2>Projects</h2>
             <p>All my Project, at one place.</p>
             </div>}  

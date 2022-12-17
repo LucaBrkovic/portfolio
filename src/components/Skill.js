@@ -39,7 +39,7 @@ export const  Skill = () => {
 
              <TrackVisibility>
              {({isVisible}) =>
-             <div className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+             <div className={isVisible ? "animate__animated animate__fadeInDown" : ""}>
                 <h2>
                     Skills 
                 </h2>

@@ -31,7 +31,7 @@ export const Contact = () => {
                     <div className='contact-div_child_contact'>
                     <TrackVisibility>
              {({isVisible}) =>
-             <div className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+             <div className={isVisible ? "animate__animated animate__fadeInDown" : ""}>
                     <h2>Get in Touch</h2>
                     </div>}
                     </TrackVisibility>
@@ -47,7 +47,7 @@ export const Contact = () => {
                         <textarea name="message"  placeholder='Message' />
                         <TrackVisibility>
              {({isVisible}) =>
-             <div className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+             <div className={isVisible ? "animate__animated animate__fadeInDown" : ""}>
                             <div className='contact-btn__container'>
                             <button type='submit'>Send Message</button>    
                             </div>
