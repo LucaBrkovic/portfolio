@@ -1,8 +1,12 @@
 import { useState, useEffect } from "react"
 import { Container, Row, Col } from "react-bootstrap"
-import { ArrowRightCircle } from "react-bootstrap-icons"
+
 import headerImg from "../assets/img/header-img.svg"
 import { Github } from "react-bootstrap-icons"
+import "animate.css"
+import TrackVisibility from "react-on-screen"
+
+
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0)
     const [isDeleting, setIsDeleting] = useState(false)
@@ -43,6 +47,9 @@ export const Banner = () => {
             <Container>
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
+                    <TrackVisibility>
+                    {({ isVisible}) =>
+                    <div className={isVisible ? "animate__animated animate__fadeIn" : ""}> 
                         <span className="tagline">Welcome to my Portfolio</span>
                         <div className="title-container">
                         <h1>{`Hi my name is Luka `}<br/> <span className="wrap wrap-color">  {text}</span></h1>
@@ -52,7 +59,8 @@ export const Banner = () => {
                            <a href="https://github.com/LucaBrkovic"><button>Github <Github/></button></a>
                             <a href="#connect"><button>Contact me</button></a>
                         </div>
-                       
+                       </div>} 
+                     </TrackVisibility>  
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="Header Img" />

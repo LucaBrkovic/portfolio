@@ -7,6 +7,8 @@ import skill2 from "../assets/img/skill2.svg"
 import skill3 from "../assets/img/skill3.svg"
 import skill4 from "../assets/img/skill4.svg"
 import colorSharp from "../assets/img/color-sharp.png"
+import "animate.css"
+import TrackVisibility from 'react-on-screen';
 export const  Skill = () => {
     const responsive = {
         superLargeDesktop: {
@@ -32,11 +34,19 @@ export const  Skill = () => {
       <Container>
         <Row>
            <Col>
+          
             <div className='skill-bx'>
+
+             <TrackVisibility>
+             {({isVisible}) =>
+             <div className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                 <h2>
                     Skills 
                 </h2>
                 <p>I can't guarantee you with experience, but I promise you that the effort is guaranteed.</p>
+                </div>}
+                </TrackVisibility>
+              
                 <Carousel responsive={responsive} infinite={true} className="skill-slider">
                 <div className='item'>
                     <img src={skill1} alt="Image" />

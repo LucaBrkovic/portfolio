@@ -2,7 +2,8 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { Col, Container, Row } from 'react-bootstrap';
 import contactImg from "../assets/img/contact-img.svg"
-
+import TrackVisibility from 'react-on-screen';
+import "animate.css"
 export const Contact = () => {
 
     const form = useRef();
@@ -28,7 +29,12 @@ export const Contact = () => {
                     <img src={contactImg}></img>
                     </div>
                     <div className='contact-div_child_contact'>
+                    <TrackVisibility>
+             {({isVisible}) =>
+             <div className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <h2>Get in Touch</h2>
+                    </div>}
+                    </TrackVisibility>
                     <form ref={form} onSubmit={sendEmail}>
                         <div className='contact-grid'>
                         <div  className="contact-type_one">
@@ -39,9 +45,14 @@ export const Contact = () => {
                         </div>
                         <div className="contact-type_two">
                         <textarea name="message"  placeholder='Message' />
+                        <TrackVisibility>
+             {({isVisible}) =>
+             <div className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                             <div className='contact-btn__container'>
                             <button type='submit'>Send Message</button>    
                             </div>
+                            </div>}
+                            </TrackVisibility>
                         </div> 
                         </div>
                     </form>
