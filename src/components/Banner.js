@@ -50,7 +50,7 @@ export const Banner = () => {
                         <p>Frontend developer in progress, based in Germany, code addicted...</p>
                         <div className="btn-container">
                            <a href="https://github.com/LucaBrkovic"><button>Github <Github/></button></a>
-                            <button onClick={""}>Contact me</button>
+                            <a href="#connect"><button>Contact me</button></a>
                         </div>
                        
                     </Col>

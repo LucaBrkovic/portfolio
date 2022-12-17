@@ -747,3 +747,186 @@ font-weight: 700;
     font-size: 10px;
     }
   }
+  /************ Contact ************/
+.contact-div_parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+.contact-div_child_contact  {
+  width: 60%;
+}
+.contact {
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  padding: 80px 0 60px 0;
+}
+.contact img {
+width: 90%;
+}
+.contact h2 {
+  text-align: center;
+	font-size: 45px;
+	font-weight: 700;
+  margin-bottom: 20px;
+}
+.contact form input, .contact form textarea {
+  width: 90%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  color: #fff;
+  margin: 0 0 8px 0;
+  padding: 18px 26px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  transition: 0.3s ease-in-out;
+}
+.contact form textarea {
+  min-height: 140px;
+}
+
+.contact form input:focus, .contact form textarea:focus {
+  background: rgba(255, 255, 255, 1);
+  color: #121212;
+}
+.contact form input::placeholder, .contact form textarea::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+.contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
+  color: #121212;
+  opacity: 0.8;
+}
+.contact-btn__container {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+.contact form button {
+  height: 50px;
+  width: 180px;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 1000;
+  letter-spacing: 2px;
+  background-color: #222222;
+  border: none;
+  transition: all 0.5s;
+  border-radius: 8px;
+  padding: 5px 20px;
+}
+.contact form button:hover {
+  background-color: #474747;
+}
+@media (max-width:1200px) {
+  .contact form input, .contact form textarea {
+    width: 90%;
+  }
+.contact img {
+  width: 90%;
+  }
+  .contact-div_parent {
+    gap: 30px;
+  }
+  .contact-div_child_contact  {
+    width: 70%;
+  }
+  .contact form textarea {
+    min-height: 110px;
+  }
+ } 
+@media (max-width:992px) {
+  .contact form input, .contact form textarea {
+    width: 100%;
+  }
+
+  .contact img {
+    width: 100%;
+    }
+    .contact-div_parent {
+      gap: 40px;
+    }
+    .contact-div_child_contact  {
+      width: 80%;
+    }
+    .contact form textarea {
+      min-height: 110px;
+    }
+}
+@media (max-width:768px) {
+  .contact img {
+    width: 100%;
+    }
+    .contact-div_parent {
+      gap: 30px;
+    }
+    .contact-div_child_contact  {
+      width: 90%;
+    }
+    .contact form textarea {
+      min-height: 110px;
+    }
+}
+@media (max-width:589px) {
+    .contact-div_child_img {
+      display: none;
+    }
+    .contact-div_parent {
+      gap: 30px;
+    }
+    .contact-div_child_contact  {
+      width: 100%;
+    }
+    .contact form textarea {
+      min-height: 110px;
+    }
+}
+
+/************ Footer Css ************/
+.footer {
+  padding: 0px 0 10px 0;
+ background-color: #222222;
+}
+.footer-container {
+  margin: 0rem 4rem 0rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer img {
+  width: 25%;
+}
+.footer p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 15px;
+  color: #B8B8B8;
+  letter-spacing: 0.5px;
+  margin-top: 0px;
+}
+.footer-logo  {
+ margin-top: 0.5rem;
+}
+@media (max-width: 684px) {
+  
+  .social-icon_foter {
+    display: flex;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  }
+  
+  
+}
+@media (max-width:612px) {
+.logo-container-foter {
+  display: none;
+}
+.footer-container {
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+}
