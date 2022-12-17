@@ -39,8 +39,7 @@ export const Project = () => {
              <div className={isVisible ? "animate__animated animate__fadeInDown" : ""}>
             <h2>Projects</h2>
             <p>All my Project, at one place.</p>
-            </div>}  
-            </TrackVisibility>
+            
             <Tab.Container id="project-tabs" defaultActiveKey="first">
             <Nav variant="pills" defaultActiveKey="/home">
          <Nav.Item>
@@ -77,7 +76,8 @@ export const Project = () => {
             </Tab.Content>
             </Tab.Container>
                     
-                    
+            </div>}  
+            </TrackVisibility> 
                 </Col>
             </Row>
         </Container>

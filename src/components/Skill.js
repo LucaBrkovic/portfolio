@@ -34,18 +34,17 @@ export const  Skill = () => {
       <Container>
         <Row>
            <Col>
-          
-            <div className='skill-bx'>
-
-             <TrackVisibility>
+           <TrackVisibility>
              {({isVisible}) =>
              <div className={isVisible ? "animate__animated animate__fadeInDown" : ""}>
+            <div className='skill-bx'>
+
+            
                 <h2>
                     Skills 
                 </h2>
                 <p>I can't guarantee you with experience, but I promise you that the effort is guaranteed.</p>
-                </div>}
-                </TrackVisibility>
+                
               
                 <Carousel responsive={responsive} infinite={true} className="skill-slider">
                 <div className='item'>
@@ -66,6 +65,8 @@ export const  Skill = () => {
                 </div>
                 </Carousel>
             </div>
+            </div>}
+                </TrackVisibility>
            </Col> 
         </Row>
       </Container>
