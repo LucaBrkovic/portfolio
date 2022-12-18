@@ -5,6 +5,7 @@ import headerImg from "../assets/img/header-img.svg"
 import { Github } from "react-bootstrap-icons"
 import "animate.css"
 import TrackVisibility from "react-on-screen"
+import { motion } from "framer-motion"
 
 
 export const Banner = () => {
@@ -56,8 +57,8 @@ export const Banner = () => {
                         </div>
                         <p>Frontend developer in progress, based in Germany, code addicted...</p>
                         <div className="btn-container">
-                           <a href="https://github.com/LucaBrkovic"><button>Github <Github/></button></a>
-                            <a href="#connect"><button>Contact me</button></a>
+                           <a href="https://github.com/LucaBrkovic"><motion.button whileHover={{ scale: 1.1 }}>Github <Github/></motion.button></a>
+                            <a href="#connect"><motion.button  whileHover={{ scale: 1.1 }}>Contact me</motion.button></a>
                         </div>
                        </div>} 
                      </TrackVisibility>  

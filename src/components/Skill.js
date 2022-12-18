@@ -7,8 +7,8 @@ import skill2 from "../assets/img/skill2.svg"
 import skill3 from "../assets/img/skill3.svg"
 import skill4 from "../assets/img/skill4.svg"
 import colorSharp from "../assets/img/color-sharp.png"
-import "animate.css"
-import TrackVisibility from 'react-on-screen';
+
+import { motion } from 'framer-motion';
 export const  Skill = () => {
     const responsive = {
         superLargeDesktop: {
@@ -34,9 +34,7 @@ export const  Skill = () => {
       <Container>
         <Row>
            <Col>
-           <TrackVisibility>
-             {({isVisible}) =>
-             <div className={isVisible ? "animate__animated animate__fadeInDown" : ""}>
+          
             <div className='skill-bx'>
 
             
@@ -65,8 +63,7 @@ export const  Skill = () => {
                 </div>
                 </Carousel>
             </div>
-            </div>}
-                </TrackVisibility>
+       
            </Col> 
         </Row>
       </Container>

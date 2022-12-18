@@ -5,6 +5,8 @@ import Nav from 'react-bootstrap/Nav';
 import gradiant from "../assets/img/gradiant.png"
 import TrackVisibility from "react-on-screen";
 import "animate.css"
+
+
 export const Project = () => {
     const projects = [
         {
@@ -34,9 +36,7 @@ export const Project = () => {
         <Container>
             <Row>
                 <Col>
-            <TrackVisibility>
-             {({isVisible}) =>
-             <div className={isVisible ? "animate__animated animate__fadeInDown" : ""}>
+           
             <h2>Projects</h2>
             <p>All my Project, at one place.</p>
             
@@ -75,9 +75,6 @@ export const Project = () => {
                 </Tab.Pane>
             </Tab.Content>
             </Tab.Container>
-                    
-            </div>}  
-            </TrackVisibility> 
                 </Col>
             </Row>
         </Container>
